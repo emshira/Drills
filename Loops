@@ -1,0 +1,40 @@
+#Practicing loops
+
+
+#1. Create a while loop that outputs the square roots of the odd positive integers less than or equal to 25.
+
+x = 8
+p Math.sqrt(x)
+p Math.class
+
+x = 1
+while x <= 25
+  p "The square root of #{x} equal #{Math.sqrt(x)}"
+  x = x + 2
+end
+
+
+
+
+
+#2. Create a method named element_index that accepts two arguments named element and my_array. If element is in my_array, then return (not output) the index (or position) of element within my_array. If element isn't in my_array, return (not output) -1
+
+def element_index (element, my_array)
+    my_array.each_with_index do |letter, index|
+      if letter == element
+        p index
+      elsif
+        p index
+      end
+    end
+  end
+
+
+
+#    element_index("b", ["a", "b", "c"])
+#   # should output 1
+#    element_index("c", ["a", "b", "c"])
+#   # should output 2
+#
+#   element_index("hello", ["a", "b", "c"])
+  # should output -1
