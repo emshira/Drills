@@ -31,19 +31,27 @@
 // 1) Define a Developer class.
 // 2) Have it inherit from the Human class.
 
-// function Human(full_name, age){
-//     this.full_name = full_name;
-//     this.age = age;
-// }
-//
-// function Developer(full_name, age){
-//   this.full_name = full_name;
-//   this.age = age;
-// }
-//
-// Developer.prototype = new Human();
-//
-// var myHuman = new Developer();
-// myHuman.spaek();
-// myHuman.name("John");
-// console.log(myHuman.name);
+// Human.prototype.sayName = function(){
+  console.log("Hi, my name is " + this.full_name);
+ }
+
+
+  Human.prototype.sayAge = function(){
+  console.log("I'm " + this.age);
+ }
+
+var jon = new Human("Jon", 93)
+jon.sayName();
+jon.sayAge();
+
+
+function Developer(full_name, age){
+    this.constructor.call(this, "Sam", 21)
+  }
+
+Developer.prototype = new Human();
+
+
+var x = new Developer()
+x.sayName()
+x.sayAge()
