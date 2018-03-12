@@ -32,26 +32,13 @@
 // 2) Have it inherit from the Human class.
 
 // Human.prototype.sayName = function(){
-  console.log("Hi, my name is " + this.full_name);
- }
+//
 
-
-  Human.prototype.sayAge = function(){
-  console.log("I'm " + this.age);
- }
-
-var jon = new Human("Jon", 93)
-jon.sayName();
-jon.sayAge();
-
-
-function Developer(full_name, age){
-    this.constructor.call(this, "Sam", 21)
+// ES6 OOP
+// 1.Create a class named Book. Its constructor should accept and set attributes for title and author.
+class Book {
+  constructor (title, author){
+    this.title = title;
+    this.author = author;
   }
-
-Developer.prototype = new Human();
-
-
-var x = new Developer()
-x.sayName()
-x.sayAge()
+}
