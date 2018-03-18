@@ -43,7 +43,7 @@
 //   }
 // }
 
-2.Give your Book:
+// 2.Give your Book:
 // - a method named getTitle that outputs the title attribute.
 // - a method named getAuthor that outputs the author attribute.
 // - a method named amISpecial that outputs "I'm Wynning!" if the title starts with the letter "w" (or "W"). Otherwise it should ouput "never judge a book by its cover ;)".
