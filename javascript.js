@@ -68,3 +68,90 @@
 //     }
 //   }
 // }
+
+
+// JS Basic Quiz:
+Q 1 - Which of the following is correct about JavaScript?
+
+A - JavaScript is a lightweight, interpreted programming language.
+B - JavaScript has object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages.
+C - The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+Answer-->D. All of the above.
+
+Q 2 - Which of the following is a valid type of function javascript supports?
+
+A - named function
+B - anonymous function
+C - Both of the above.
+D - None of the above.
+Answer-->C.  A function in JavaScript can be either named or anonymous.
+
+Q 3 - Which built-in method returns the length of the string?
+
+A - length()
+B - size()
+C - index()
+D - None of the above.
+Answer-->A. length() method returns the length of the string.
+
+
+Q 4 - Which of the following function of Number object forces a number to display in exponential notation?
+
+A - toExponential()
+B - toFixed()
+C - toPrecision()
+D - toLocaleString()
+Answer-->A.toExponential(): Forces a number to display in exponential notation, even if the number
+
+Q 5 - Which of the following function of Number object defines how many total digits to display of a number?
+
+A - toExponential()
+B - toFixed()
+C - toLocaleString()
+D - toPrecision()
+Answer--> D.toPrecision() − Defines how many total digits (including digits to the left and right of the decimal) to display of a number.
+
+
+Q 6 - Which of the following function of String object extracts a section of a string and returns a new string?
+
+A - slice()
+B - split()
+C - replace()
+D - search()
+Answer-->A. slice() − Extracts a section of a string and returns a new string.
+
+
+Q 7 - Which of the following function of String object returns the calling string value converted to lower case?
+
+A - toLocaleLowerCase()
+B - toLowerCase()
+C - toString()
+D - substring()
+Answer-->B. toLowerCase() − Returns the calling string value converted to lower case.
+
+
+Q 8 - Which of the following function of String object creates an HTML hypertext link that requests another URL?
+
+A - link()
+B - sub()
+C - sup()
+D - small()
+Answer-->A. ink() − Creates an HTML hypertext link that requests another URL.
+
+
+Q 9 - Which of the following function of Array object joins all elements of an array into a string?
+
+A - concat()
+B - join()
+C - pop()
+D - map()
+Answer-->B. join() − Joins all elements of an array into a string.
+
+
+Q 10 - Which of the following function of Array object returns a string representing the array and its elements?
+
+A - toSource()
+B - sort()
+C - splice()
+D - toString()
+Answer-->tD. oString() − Returns a string representing the array and its elements.
