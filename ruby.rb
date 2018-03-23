@@ -86,3 +86,10 @@
 #     puts @@everyone
 #   end
 # end
+
+
+def say_hello(name)
+ "Why, hello there " + name
+end
+
+say_hello "Jack"
