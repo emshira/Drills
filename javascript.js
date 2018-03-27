@@ -71,7 +71,7 @@
 
 
 // JS Basic Quiz:
-Q 1 - Which of the following is correct about JavaScript?
+/*Q 1 - Which of the following is correct about JavaScript?
 
 A - JavaScript is a lightweight, interpreted programming language.
 B - JavaScript has object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages.
@@ -154,4 +154,99 @@ A - toSource()
 B - sort()
 C - splice()
 D - toString()
-Answer-->tD. oString() − Returns a string representing the array and its elements.
+Answer-->tD. oString() − Returns a string representing the array and its elements.*/
+
+
+JS Quiz
+1.
+function() {
+    var a = 10;
+    if(a > 5) {
+        a = 7;
+    }
+    alert(a);
+}
+When executed, what value will be alerted to the screen?
+
+7
+10
+null
+undefined
+
+Answer:7
+What happens here is exactly as you might expect. You declare a local variable and set its value to 10. Its value is indeed greater than 5, so you set its value to 7. You then alert this new value, 7.
+
+2.
+function() {
+    if(true) {
+        var a = 5;
+    }
+    alert(a);
+}
+Ok, so what would be the value alerted by this function?
+
+0
+5
+null
+undefined
+Answer: 5
+Based on knowledge of several other languages (such as Java or C), this would certainly be true. However, Javascript doesn't change scope when entering if statements, loops, or anything like that, really. The only common thing that will change the scope is entering a function.
+
+So, what does that mean here? Essentially, if you do indeed enter that if statement (which you must, because true is always truthy), a new variable, a, will be allocated at the scope of that function. Anything else in that function, even if it's not in the if statement, has access to the variable a. However, nothing outside of that function has access to a.
+
+This is what many people mean when they claim that Javascript has "Function Scope," as opposed to "Block Scope."
+
+
+3.
+function() {
+    a = 3;
+    alert(a);
+}
+it's a global variable. Why? Because it was never specifically declared (using var), so it was assumed to be global. Effectively, it's the same as:
+var a;
+function() {
+    a = 3;
+    alert(a);
+}
+Now, what exactly is a global variable? Where does it actually reside?
+
+When Javascript comes across a global variable, it needs somewhere to put it. It needs somewhere that everywhere else on the page can access. So, it uses the window object. This object is around for the entire lifetime of the page, and everything can access it
+
+4.
+
+var a = 5;
+function first() {
+    a = 6;
+}
+
+
+function second() {
+    alert(a);
+}
+Assuming I call these functions in order, what value gets alerted?
+
+0
+5
+6
+null
+undefined
+Answer:6
+Here, we allocate a global variable a and set its value to 5. By calling first(), we change its value to 6. This value, 6, then gets alerted.
+
+5.
+function first() {
+    window.a = 3;
+}
+
+
+function second() {
+    alert(a);
+}
+Assuming I call these functions in order, whats alerted?
+
+0
+3
+null
+undefined
+Answer:3
+Recall that global variables are really stored in the window object. So, when I call first(), I set the global variable a to 3. Next, second() looks for a variable a to alert to the screen. In this case, the only a it can find is the global variable, so it alerts 3 to the screen.
